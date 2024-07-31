@@ -1,0 +1,37 @@
+{
+  "name": "quick-start-electron",
+  "version": "1.0.0",
+  "description": "A simple Electron app to shuffle text",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^23.3.13",
+    "electron-builder": "^22.11.7"
+  },
+  "author": "José",
+  "build": {
+    "appId": "none.com",
+    "productName": "searcher",
+    "files": [
+      "main.js",
+      "index.html",
+      "searchExample.js",
+      "render.js",
+      "preload.js",
+      "logger.js",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "electron-log": "^5.1.7"
+  }
+}
