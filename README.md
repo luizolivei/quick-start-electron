@@ -2,7 +2,7 @@
 ready-to-use structure, including build configurations, installer generation, and integration with Node.js functionalities example.
 
 To clone tihs repository:
-1. git clone https://github.com/yourusername/quick-start-electron.git
+1. git clone https://github.com/luizolivei/quick-start-electron.git
 2. cd quick-start-electron
 
 Running the Application in DEV:
