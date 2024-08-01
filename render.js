@@ -1,7 +1,7 @@
 document.getElementById('searchButton').addEventListener('click', () => {
-    const term = document.getElementById('first').value;
-    const location = document.getElementById('second').value;
-    window.electron.send('search', { term, location });
+    const first = document.getElementById('first').value;
+    const second = document.getElementById('second').value;
+    window.electron.send('search', { first, second });
 });
 
 window.electron.receive('search-result', (result) => {

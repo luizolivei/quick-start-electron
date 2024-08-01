@@ -33,6 +33,6 @@ app.on('activate', () => {
 ipcMain.on('search', async (event, { first, second }) => {
     console.log("first name", first);
     console.log("second name", second);
-    const result = await scrapeGoogleBusiness();
+    const result = await scrapeGoogleBusiness({ first, second });
     event.sender.send('search-result', result);
 });
